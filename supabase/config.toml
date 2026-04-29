@@ -1,0 +1,8 @@
+[functions.stripe-webhook]
+verify_jwt = false
+
+[functions.web-sign-bunny-url]
+verify_jwt = false
+
+[functions.web-welcome-email]
+verify_jwt = false
