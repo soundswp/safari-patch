@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundSwipe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+    <div class="shell">
+        <div data-nav></div>
+
+        <main class="page-shell home-page-shell">
+            <div class="home-ambient-stack" aria-hidden="true">
+                <div class="home-ambient-layer home-ambient-layer--base"></div>
+                <div class="home-ambient-layer home-ambient-layer--beats" data-home-global-ambient="beats"></div>
+                <div class="home-ambient-layer home-ambient-layer--songs" data-home-global-ambient="songs"></div>
+                <div class="home-ambient-layer home-ambient-layer--profiles" data-home-global-ambient="profiles"></div>
+                <div class="home-ambient-overlay"></div>
+            </div>
+            <div class="container home-surface">
+                <section class="discover-hero discover-hero--alive discover-section--ambient discover-section--hero" data-home-ambient-section="hero" data-home-ambient-source="beats">
+                    <article class="hero-panel discover-hero-copy">
+                        <span class="eyebrow">Beat Marketplace</span>
+                        <h1>The new home for buying and selling beats</h1>
+                        <p>Upload beats, build your profile, and start selling now.<br>The SoundSwipe app is coming soon for swipe-based discovery and instant recording.</p>
+                        <div class="discover-hero-actions">
+                            <button class="button" id="hero-upload-button" type="button">Start Selling Beats</button>
+                            <a class="button-secondary" href="search.html?type=beats">Browse Beats</a>
+                            <span class="button-secondary button-disabled" aria-disabled="true">App Coming Soon</span>
+                        </div>
+                    </article>
+                    <article class="hero-panel discover-hero-visual">
+                        <div class="tile-grid marketplace-hero-grid">
+                            <article class="tile marketplace-hero-tile">
+                                <span class="tile-label">Sell Beats</span>
+                                <p>Upload your beats, set your license tiers, and build your storefront.</p>
+                            </article>
+                            <article class="tile marketplace-hero-tile">
+                                <span class="tile-label">Buy Licenses</span>
+                                <p>Browse beats and purchase licenses directly.</p>
+                            </article>
+                            <article class="tile marketplace-hero-tile">
+                                <span class="tile-label">Mobile App</span>
+                                <p>Swipe beats, open the studio, and record instantly — coming soon.</p>
+                            </article>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="section discover-section discover-section--ambient" data-home-ambient-section="beats">
+                    <div class="discover-section-shell">
+                        <div class="section-header discover-section-header">
+                            <div>
+                                <h2>Trending Beats</h2>
+                                <p class="section-note">Browse the beats people are discovering right now.</p>
+                            </div>
+                            <a class="button-secondary" href="search.html?type=beats">See all beats</a>
+                        </div>
+                        <div class="discover-row" data-trending-beats></div>
+                    </div>
+                </section>
+
+                <section class="section discover-section discover-section--ambient" data-home-ambient-section="songs">
+                    <div class="discover-section-shell">
+                        <div class="section-header discover-section-header">
+                            <div>
+                                <h2>Trending Songs</h2>
+                                <p class="section-note">Explore songs rising across SoundSwipe.</p>
+                            </div>
+                            <a class="button-secondary" href="search.html?type=songs">See all songs</a>
+                        </div>
+                        <div class="discover-row" data-trending-songs></div>
+                    </div>
+                </section>
+
+                <section class="section discover-section discover-section--ambient" data-home-ambient-section="profiles">
+                    <div class="discover-section-shell">
+                        <div class="section-header discover-section-header">
+                            <div>
+                                <h2>Trending Profiles</h2>
+                                <p class="section-note">See the creators people are following and listening to.</p>
+                            </div>
+                            <a class="button-secondary" href="search.html?type=profiles">See all profiles</a>
+                        </div>
+                        <div class="discover-row" data-trending-profiles></div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <div data-modals></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="data.js"></script>
+    <script src="supabase-web.js?v=20260419b"></script>
+    <script src="app.js?v=20260419b"></script>
+</body>
+</html>

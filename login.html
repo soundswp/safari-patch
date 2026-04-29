@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login • SoundSwipe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="auth-login">
+    <div class="shell">
+        <div data-nav></div>
+        <main class="page-shell">
+            <div class="container auth-wrap">
+                <section class="auth-card">
+                    <img class="logo-mark" src="soundswipe_logo3.png" alt="SoundSwipe">
+                    <h1>Welcome back</h1>
+                    <p>Use the same SoundSwipe account for the web marketplace now and the mobile app when it launches.</p>
+                    <form data-login-form class="form-grid single">
+                        <div class="field">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="Email address">
+                        </div>
+                        <div class="field">
+                            <label>Password</label>
+                            <input type="password" name="password" placeholder="Password">
+                        </div>
+                        <div class="helper-row">
+                            <span>Forgot password?</span>
+                            <a href="signup.html">Create account</a>
+                        </div>
+                        <button class="button" type="submit">Log In</button>
+                    </form>
+                    <div class="auth-feedback" data-auth-feedback></div>
+                    <div class="divider">or continue with</div>
+                    <div class="social-stack">
+                        <button class="social-button" data-social-login data-social-provider="google" type="button">Continue with Google</button>
+                        <button class="social-button" data-social-login data-social-provider="apple" type="button">Continue with Apple</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <div data-modals></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="data.js"></script>
+    <script src="supabase-web.js?v=20260419b"></script>
+    <script src="app.js?v=20260419b"></script>
+</body>
+</html>

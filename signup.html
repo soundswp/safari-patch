@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up • SoundSwipe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="auth-signup">
+    <div class="shell">
+        <div data-nav></div>
+        <main class="page-shell">
+            <div class="container auth-wrap">
+                <section class="auth-card">
+                    <h1>Create account</h1>
+                    <p>Create your SoundSwipe account to start building your profile, uploading beats, and exploring the marketplace.</p>
+                    <form data-signup-form class="form-grid" autocomplete="off">
+                        <div class="field">
+                            <label>First Name</label>
+                            <input name="first_name" placeholder="First name" autocomplete="given-name">
+                        </div>
+                        <div class="field">
+                            <label>Last Name</label>
+                            <input name="last_name" placeholder="Last name" autocomplete="family-name">
+                        </div>
+                        <div class="field">
+                            <label>Display Name</label>
+                            <input name="display_name" placeholder="How your profile should appear" autocomplete="off" autocapitalize="words">
+                        </div>
+                        <div class="field">
+                            <label>Username</label>
+                            <input name="username" placeholder="@username" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" readonly onfocus="this.removeAttribute('readonly');">
+                        </div>
+                        <div class="field">
+                            <label>Email Address</label>
+                            <input type="email" name="email" placeholder="Email address" autocomplete="email">
+                        </div>
+                        <div class="field">
+                            <label>Date of Birth</label>
+                            <input type="date" name="date_of_birth" autocomplete="bday">
+                        </div>
+                        <div class="field" style="grid-column: 1 / -1;">
+                            <label>Create Password</label>
+                            <input type="password" name="password" placeholder="Create password" autocomplete="new-password" readonly onfocus="this.removeAttribute('readonly');">
+                        </div>
+                        <div class="field" style="grid-column: 1 / -1;">
+                            <label>Account Type</label>
+                            <div class="user-type-picker">
+                                <label class="user-type-option">
+                                    <input type="checkbox" name="user_type_artist">
+                                    <span>Artist</span>
+                                </label>
+                                <label class="user-type-option">
+                                    <input type="checkbox" name="user_type_producer">
+                                    <span>Producer</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field" style="grid-column: 1 / -1;">
+                            <button class="button" type="submit">Create Account</button>
+                        </div>
+                    </form>
+                    <div class="auth-feedback" data-auth-feedback></div>
+                    <div class="auth-status" data-auth-status></div>
+                    <div class="divider">or continue with</div>
+                    <div class="social-stack">
+                        <button class="social-button" data-social-login data-social-provider="google" type="button">Continue with Google</button>
+                        <button class="social-button" data-social-login data-social-provider="apple" type="button">Continue with Apple</button>
+                    </div>
+                    <div class="helper-row">
+                        <span>Already have an account?</span>
+                        <a href="login.html">Log In</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <div data-modals></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="data.js"></script>
+    <script src="supabase-web.js?v=20260419b"></script>
+    <script src="app.js?v=20260419b"></script>
+</body>
+</html>

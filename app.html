@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Coming Soon • SoundSwipe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="app-preview">
+    <div class="shell">
+        <div data-nav></div>
+
+        <main class="page-shell">
+            <div class="container">
+                <section class="discover-hero">
+                    <article class="hero-panel discover-hero-copy">
+                        <span class="eyebrow">App Coming Soon</span>
+                        <h1>Swipe beats and record when the mobile app launches</h1>
+                        <p>The SoundSwipe website is live today for buying, selling, and uploading beats. The mobile app is coming soon so artists can swipe through beats, open the studio, and record directly on them.</p>
+                        <div class="discover-hero-actions">
+                            <span class="button button-disabled" aria-disabled="true">Mobile App Launching Soon</span>
+                            <a class="button-secondary" href="index.html">Explore the Marketplace</a>
+                        </div>
+                    </article>
+                    <article class="hero-panel discover-hero-visual">
+                        <div class="phone-stage">
+                            <div class="phone-glow"></div>
+                            <div class="phone-frame">
+                                <div class="phone-carousel" data-hero-carousel>
+                                    <img class="phone-slide is-active" src="discover-hero-preview.png" alt="SoundSwipe mobile app preview showing the swipe feed">
+                                    <img class="phone-slide" src="hero-slide-1.png" alt="SoundSwipe mobile app preview showing the studio mixer">
+                                    <img class="phone-slide" src="hero-slide-2.png" alt="SoundSwipe mobile app preview showing vocal recording">
+                                    <img class="phone-slide" src="hero-slide-3.png" alt="SoundSwipe mobile app preview showing an expanded beat card">
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="section">
+                    <div class="tile-grid">
+                        <article class="tile">
+                            <span class="tile-label">Swipe Discovery</span>
+                            <h3>Browse beats faster</h3>
+                            <p>The app will bring SoundSwipe’s discovery experience into a dedicated swipe-based feed built for artists.</p>
+                        </article>
+                        <article class="tile">
+                            <span class="tile-label">Built-In Studio</span>
+                            <h3>Record directly on beats</h3>
+                            <p>Artists will be able to move from discovery into recording without leaving the SoundSwipe mobile workflow.</p>
+                        </article>
+                        <article class="tile">
+                            <span class="tile-label">Same Account</span>
+                            <h3>One catalog across web and mobile</h3>
+                            <p>Your SoundSwipe account, profile, purchases, and uploaded beat listings will carry across when the app launches.</p>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <div data-modals></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="data.js"></script>
+    <script src="supabase-web.js?v=20260419b"></script>
+    <script src="app.js?v=20260419b"></script>
+</body>
+</html>
