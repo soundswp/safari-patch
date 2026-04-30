@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "soundswipe-landing-clean",
+  "compatibility_date": "2026-04-29",
+  "assets": {
+    "directory": "."
+  }
+}
